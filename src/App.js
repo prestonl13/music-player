@@ -9,11 +9,11 @@ import ImageSlider from "./ImageSlider.js";
 function App() {
 
   const slides = [
-    {url: "http://localhost:3000/theweeknd.jpg", title: "The Weeknd"},
-    {url: "http://localhost:3000/bruno.jpg", title: "Bruno Mars"},
-    {url: "http://localhost:3000/billie.jpg", title: "Billie Eillish"},
-    {url: "http://localhost:3000/kendrick.jpg", title: "Kendrick Lamar"},
-    {url: "http://localhost:3000/sabrina.jpg", title: "Sabrina Carpenter"},
+    {url: "/workspaces/music-player/public/theweeknd.jpg", title: "The Weeknd"},
+    {url: "/workspaces/music-player/public/bruno.jpg", title: "Bruno Mars"},
+    {url: "/workspaces/music-player/public/billie.jpg", title: "Billie Eillish"},
+    {url: "/workspaces/music-player/public/kendrick.jpg", title: "Kendrick Lamar"},
+    {url: "/workspaces/music-player/public/sabrina.jpg", title: "Sabrina Carpenter"},
   ];
 
   const containerStyles = {
