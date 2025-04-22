@@ -7,14 +7,18 @@ const ImageSlider = ({ slides }) => {
     const sliderStyles = {
         height: "100%",
         position: "relative",
+        marginTop: "25px"
     };
 
     const slideStyles = {
         width: "100%",
         height: "100%",
         borderRadius: "10px",
+        borderStyle: "solid",
+        borderWidth: "5px",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        marginBottom: "25px",
         backgroundImage: `url(${slides[currentIndex].url})`,
     };
 
@@ -27,6 +31,7 @@ const ImageSlider = ({ slides }) => {
         color: "#fffff",
         zIndex: 1,
         cursor: "pointer",
+        webkitfilter: "brightness(100%)",
     };
 
     const rightArrowStyles = {
@@ -43,6 +48,7 @@ const ImageSlider = ({ slides }) => {
     const dotsContainerStyles = {
         display: "flex",
         justifyContent: "center",
+        transform: "translate(0, -200%)",
     };
 
     const dotStyles = {
@@ -58,10 +64,11 @@ const ImageSlider = ({ slides }) => {
     };
 
     const goToNext = () => {
-        const isLastSlide = currentIndex === slides.length;
+        const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
+    
 
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex);

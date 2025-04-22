@@ -1,0 +1,9 @@
+.container{
+    display:flex
+}
+
+#gallery{
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
