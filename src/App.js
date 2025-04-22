@@ -9,11 +9,11 @@ import ImageSlider from "./ImageSlider.js";
 function App() {
 
   const slides = [
-    {url: "/workspaces/music-player/public/theweeknd.jpg", title: "The Weeknd"},
-    {url: "/workspaces/music-player/public/bruno.jpg", title: "Bruno Mars"},
-    {url: "/workspaces/music-player/public/billie.jpg", title: "Billie Eillish"},
-    {url: "/workspaces/music-player/public/kendrick.jpg", title: "Kendrick Lamar"},
-    {url: "/workspaces/music-player/public/sabrina.jpg", title: "Sabrina Carpenter"},
+    {url: "/theweeknd.jpg", title: "The Weeknd"},
+    {url: "/bruno.jpg", title: "Bruno Mars"},
+    {url: "/billie.jpg", title: "Billie Eillish"},
+    {url: "/kendrick.webp", title: "Kendrick Lamar"},
+    {url: "/sabrina.jpg", title: "Sabrina Carpenter"},
   ];
 
   const containerStyles = {
@@ -33,7 +33,7 @@ function App() {
       <div style = {containerStyles}>
         <ImageSlider slides = {slides} />
       </div>
-      <SearchBar class = "center" />
+      <SearchBar />
     </div>
   );
 }
