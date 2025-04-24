@@ -1,38 +1,34 @@
-import { useState } from "react";
-
+import React, { useState } from 'react';
 import "./SearchBar.css";
 
-export const SearchBar = ({ setResults }) => {
-  const [input, setInput] = useState("");
+function SearchBar({ items }) {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredItems, setFilteredItems] = useState(items);
 
-  const fetchData = (value) => {
-    fetch("./data.js")
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.filter((user) => {
-          return (
-            value &&
-            user &&
-            user.name &&
-            user.name.toLowerCase().includes(value)
-          );
-        });
-        setResults(results);
-      });
-  };
-
-  const handleChange = (value) => {
-    setInput(value);
-    fetchData(value);
+  const handleSearch = (event) => {
+    const term = event.target.value;
+    setSearchTerm(term);
+    const results = items.filter(item =>
+      item.toLowerCase().includes(term.toLowerCase())
+    );
+    setFilteredItems(results);
   };
 
   return (
-    <div className="input-wrapper">
+    <div>
       <input
-        placeholder="Type to search..."
-        value={input}
-        onChange={(e) => handleChange(e.target.value)}
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearch}
       />
+      <ul>
+        {filteredItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
-};
+}
+
+export default SearchBar;

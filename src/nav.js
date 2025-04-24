@@ -15,10 +15,6 @@ const Navbar = () => {
        Music Player
      </a>
     </div>
-    <div className="search-bar-container">
-        <SearchBar setResults={setResults} />
-        {results && results.length > 0 && <SearchResultsList results={results} />}
-    </div>
     
     <div className="navbar-center">
      <ul className="nav-links">

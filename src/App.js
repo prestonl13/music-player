@@ -32,10 +32,6 @@ function App() {
     <div style = {containerStyles}>
       <ImageSlider slides = {slides} />
     </div>
-    <div className="search-bar-container">
-        <SearchBar setResults={setResults} />
-        {results && results.length > 0 && <SearchResultsList results={results} />}
-    </div>
     <Gallery data = {data.albums} />
   </div>
   );
