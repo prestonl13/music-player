@@ -1,31 +1,30 @@
 let data = {
-    albums:[
-      { title: "Abbey Road", image: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_Abbey_Road.jpg" },  // rock
-      { title: "Thriller", image: "https://upload.wikimedia.org/wikipedia/en/7/72/Michael_Jackson_-_Thriller.png" },  // pop
-      { title: "To Pimp a Butterfly", image: "https://upload.wikimedia.org/wikipedia/en/f/f4/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png" },  // hip hop
-      { title: "Random Access Memories", image: "https://upload.wikimedia.org/wikipedia/en/a/a9/Daft_Punk_-_Random_Access_Memories.jpg" },  // electronic
-      { title: "Beethoven: Symphony No. 9", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Frank_Gehry_Beethoven_9th_Symphony_album_cover.jpg/600px-Frank_Gehry_Beethoven_9th_Symphony_album_cover.jpg" },  // classical
-      { title: "Blue", image: "https://upload.wikimedia.org/wikipedia/en/9/97/Joni_Mitchell_-_Blue.jpg" },  // folk
-      { title: "Kind of Blue", image: "https://upload.wikimedia.org/wikipedia/en/9/9c/Miles_Davis_-_Kind_of_Blue.jpg" },  // jazz
-      { title: "Led Zeppelin IV", image: "https://upload.wikimedia.org/wikipedia/en/e/e7/Led_Zeppelin_-_Led_Zeppelin_IV.jpg" },  // hard rock
-      { title: "Rumours", image: "https://upload.wikimedia.org/wikipedia/en/9/92/Fleetwood_Mac_-_Rumours.jpg" },  // soft rock
-      { title: "Nevermind", image: "https://upload.wikimedia.org/wikipedia/en/b/b6/Nirvana_Nevermind.jpg" },  // grunge
-      { title: "Purple Rain", image: "https://upload.wikimedia.org/wikipedia/en/9/94/Prince_and_the_Revolution_-_Purple_Rain_%28album_cover%29.jpg" },  // funk rock
-      { title: "Tapestry", image: "https://upload.wikimedia.org/wikipedia/en/1/17/Carole_King_-_Tapestry.jpg" },  // singer-songwriter
-      { title: "What's Going On", image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/MarvinGayeWhat%27sGoingOn.jpg/600px-MarvinGayeWhat%27sGoingOn.jpg" },  // soul
-      { title: "Blood on the Tracks", image: "https://upload.wikimedia.org/wikipedia/en/8/82/Bob_Dylan_-_Blood_on_the_Tracks.jpg" },  // folk rock
-      { title: "The Velvet Underground & Nico", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/The_Velvet_Underground_%26_Nico.jpg/600px-The_Velvet_Underground_%26_Nico.jpg" },  // art rock
-      { title: "OK Computer", image: "https://upload.wikimedia.org/wikipedia/en/a/ac/Radiohead_-_OK_Computer.jpg" },  // alternative rock
-      { title: "The Joshua Tree", image: "https://upload.wikimedia.org/wikipedia/en/e/e2/U2TheJoshuaTree.jpg" },  // rock
-      { title: "Bad", image: "https://upload.wikimedia.org/wikipedia/en/9/93/Michael_Jackson_-_Bad.png" },  // pop
-      { title: "Illmatic", image: "https://upload.wikimedia.org/wikipedia/en/d/d7/Nas_Illmatic.jpg" },  // hip hop
-      { title: "Homework", image: "https://upload.wikimedia.org/wikipedia/en/a/aa/Daft_Punk_-_Homework.jpg" },  // electronic
-      { title: "Bach: Goldberg Variations", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Glenn_Gould_Goldberg_Variations_1955_cover.jpg/600px-Glenn_Gould_Goldberg_Variations_1955_cover.jpg" },  // classical
-      { title: "Grace", image: "https://upload.wikimedia.org/wikipedia/en/a/a9/JeffBuckleyGrace.jpg" },  // alternative
-      { title: "Miles Smiles", image: "https://upload.wikimedia.org/wikipedia/en/b/b5/Miles_Davis_-_Miles_Smiles.jpg" },  // jazz
-      { title: "Metallica", image: "https://upload.wikimedia.org/wikipedia/en/3/3c/Metallica_Metallica.jpg" },  // heavy metal
-      { title: "The Low End Theory", image: "https://upload.wikimedia.org/wikipedia/en/e/e1/ATCQTheLowEndTheory.jpg" }   // hip hop
-    ],
+  albums: [
+    { title: "Abbey Road", artist: "The Beatles", image: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" },
+    { title: "Thriller", artist: "Michael Jackson", image: "https://imgs.search.brave.com/K3E3Q2pfxZY7tcifUrPowjLSmnydgrcHrIAIhUIIgeU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/cC5zbWVob3N0Lm5l/dC9zaXRlcy8yOGQz/NWQ1NGEzYzY0ZTJi/ODUxNzkwYTE4YTFj/NGMxOC93cC1jb250/ZW50L3VwbG9hZHMv/MjAwOS8wMy90aHJp/bGxlci1hbGJ1bS1t/aWNoYWVsamFja3Nv/bi5qcGc" },
+    { title: "To Pimp a Butterfly", artist: "Kendrick Lamar", image: "https://m.media-amazon.com/images/I/81VcA8-kuZL._UF1000,1000_QL80_.jpg" },
+    { title: "Random Access Memories", artist: "Daft Punk", image: "https://upload.wikimedia.org/wikipedia/en/2/26/Daft_Punk_-_Random_Access_Memories.png" },
+    { title: "Blue", artist: "Joni Mitchell", image: "https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg" },
+    { title: "Kind of Blue", artist: "Miles Davis", image: "https://m.media-amazon.com/images/I/71dQKN2UEfL._UF1000,1000_QL80_.jpg" },
+    { title: "Led Zeppelin IV", artist: "Led Zeppelin", image: "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg" },
+    { title: "Rumours", artist: "Fleetwood Mac", image: "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG" },
+    { title: "Nevermind", artist: "Nirvana", image: "https://m.media-amazon.com/images/I/71MrcL3-MhL.jpg" },
+    { title: "Purple Rain", artist: "Prince", image: "https://m.media-amazon.com/images/I/81CzfbO4CrL.jpg" },
+    { title: "Tapestry", artist: "Carole King", image: "https://m.media-amazon.com/images/I/9127CQsmybL.jpg" },
+    { title: "What's Going On", artist: "Marvin Gaye", image: "https://upload.wikimedia.org/wikipedia/en/8/84/MarvinGayeWhat%27sGoingOnalbumcover.jpg" },
+    { title: "Blood on the Tracks", artist: "Bob Dylan", image: "https://m.media-amazon.com/images/I/81x8ZJqMm7L._UF1000,1000_QL80_.jpg" },
+    { title: "The Velvet Underground & Nico", artist: "The Velvet Underground", image: "https://m.media-amazon.com/images/I/71H2+Sj3wmL.jpg" },
+    { title: "OK Computer", artist: "Radiohead", image: "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png" },
+    { title: "The Joshua Tree", artist: "U2", image: "https://m.media-amazon.com/images/I/71nhNKvy+fL._UF1000,1000_QL80_.jpg" },
+    { title: "Bad", artist: "Michael Jackson", image: "https://m.media-amazon.com/images/I/717IE87d0dL.jpg" },
+    { title: "Illmatic", artist: "Nas", image: "https://upload.wikimedia.org/wikipedia/en/2/27/IllmaticNas.jpg" },
+    { title: "Homework", artist: "Daft Punk", image: "https://upload.wikimedia.org/wikipedia/en/9/9c/Daftpunk-homework.jpg" },
+    { title: "Bach: Goldberg Variations", artist: "Glenn Gould", image: "https://m.media-amazon.com/images/I/71PjiPLpd4L._UF1000,1000_QL80_.jpg" },
+    { title: "Grace", artist: "Jeff Buckley", image: "https://upload.wikimedia.org/wikipedia/en/e/e4/Jeff_Buckley_grace.jpg" },
+    { title: "Miles Smiles", artist: "Miles Davis", image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Miles_Davis_-_Miles_Smiles.jpg/220px-Miles_Davis_-_Miles_Smiles.jpg" },
+    { title: "Metallica", artist: "Metallica", image: "https://upload.wikimedia.org/wikipedia/en/2/2c/Metallica_-_Metallica_cover.jpg" },
+    { title: "The Low End Theory", artist: "A Tribe Called Quest", image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/ATribeCalledQuestTheLowEndtheory.jpg/250px-ATribeCalledQuestTheLowEndtheory.jpg" }
+  ]  
 }
   export default data;
   

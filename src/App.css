@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .main{
   background-color: #50586C;
@@ -20,10 +17,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -33,18 +26,25 @@
 }
 
 .card{
-  flex:1;
-  padding:10px;
-  max-height: 200px;
-  max-width: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
   background-color: white;
   color: #50586C;
-  border-radius:10px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #DCE2F0;
-  text-align:center;
 }
 
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  display: block;
+  border-radius: 5px; 
+}
+
+.carddesc {
+  padding: 2px 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

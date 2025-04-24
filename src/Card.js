@@ -6,8 +6,11 @@ export const Card = (props) => {
   let info = props.data
   return (
         <div className="card">
-            <h1>{info.title}</h1>
             <img src={info.image} alt=""/> 
+            <div className = "carddesc"> 
+              <h1>{info.title}</h1>
+              <p>{info.artist}</p>
+            </div>
         </div>
   );
 }

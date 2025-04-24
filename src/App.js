@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import ImageSlider from "./ImageSlider.js";
 import Navbar from "./nav.js";
 import { SearchBar } from "./SearchBar";
-import { SearchResultsList } from "./SearchResultsList";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -27,12 +26,12 @@ function App() {
   };
 
   return (
-  <div className = "main">        
-    <Navbar />     
+  <div className = "main">
+    <Navbar />
     <div style = {containerStyles}>
       <ImageSlider slides = {slides} />
     </div>
-    <Gallery data = {data.albums} />
+      <Gallery data = {data.albums} />
   </div>
   );
 }
