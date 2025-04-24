@@ -6,8 +6,11 @@ import data from "./data.js";
 import { useState, useEffect } from "react";
 import ImageSlider from "./ImageSlider.js";
 import Navbar from "./nav.js";
+import { SearchBar } from "./SearchBar";
+import { SearchResultsList } from "./SearchResultsList";
 
 function App() {
+  const [results, setResults] = useState([]);
 
   const slides = [
     {url: "/theweeknd.jpg", title: "The Weeknd"},
@@ -23,18 +26,15 @@ function App() {
     margin: "0 auto",
   };
 
-  const [inputText, setInputText] = useState("");
-  let inputHandler = (e) => {
-    var lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-  };
-
   return (
-  <div className = "main">      
-   
-    <Navbar />
+  <div className = "main">        
+    <Navbar />     
     <div style = {containerStyles}>
       <ImageSlider slides = {slides} />
+    </div>
+    <div className="search-bar-container">
+        <SearchBar setResults={setResults} />
+        {results && results.length > 0 && <SearchResultsList results={results} />}
     </div>
     <Gallery data = {data.albums} />
   </div>

@@ -1,21 +1,38 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
-function SearchBar({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState('');
+import "./SearchBar.css";
 
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-    onSearch(event.target.value);
+export const SearchBar = ({ setResults }) => {
+  const [input, setInput] = useState("");
+
+  const fetchData = (value) => {
+    fetch("./data.js")
+      .then((response) => response.json())
+      .then((json) => {
+        const results = json.filter((user) => {
+          return (
+            value &&
+            user &&
+            user.name &&
+            user.name.toLowerCase().includes(value)
+          );
+        });
+        setResults(results);
+      });
+  };
+
+  const handleChange = (value) => {
+    setInput(value);
+    fetchData(value);
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search..."
-      value={searchTerm}
-      onChange={handleInputChange}
-    />
-  ); 
-}
-
-export default SearchBar;
+    <div className="input-wrapper">
+      <input
+        placeholder="Type to search..."
+        value={input}
+        onChange={(e) => handleChange(e.target.value)}
+      />
+    </div>
+  );
+};
