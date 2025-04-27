@@ -1,9 +1,9 @@
 import React from 'react';
 import './nav.css';
 import { useState } from 'react';
-import { SearchBar } from "./SearchBar";
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Nav = () => {
 
 
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="navbar-center">
      <ul className="nav-links">
        <li>
-         <a href="/music">Music</a>
+         <Link to="/SearchPage"> Search </Link>
        </li>
        <li>
          <a href="/about">About Us</a>
@@ -33,4 +33,4 @@ const Navbar = () => {
 );
 };
 
-export default Navbar;
+export default Nav;

@@ -5,8 +5,9 @@ import "./App.css";
 import data from "./data.js";
 import { useState, useEffect } from "react";
 import ImageSlider from "./ImageSlider.js";
-import Navbar from "./nav.js";
-import { SearchBar } from "./SearchBar";
+import Nav from "./nav.js";
+import SearchPage from "./SearchPage.js";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -27,11 +28,22 @@ function App() {
 
   return (
   <div className = "main">
-    <Navbar />
+    <Routes>
+      <Route path="/SearchPage" element = {<SearchPage/>} />
+    </Routes>
+
+
+    <Nav />
+
+
     <div style = {containerStyles}>
       <ImageSlider slides = {slides} />
     </div>
-      <Gallery data = {data.albums} />
+
+
+    <Gallery data = {data.albums} />
+
+
   </div>
   );
 }
