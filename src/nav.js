@@ -1,9 +1,8 @@
 import React from 'react';
 import './nav.css';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+function Nav() {
 
 
 
@@ -31,6 +30,6 @@ const Nav = () => {
     </div>
   </nav>
 );
-};
+}
 
 export default Nav;
