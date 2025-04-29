@@ -1,7 +1,7 @@
 let data = {
   albums: [
     { title: "Abbey Road", artist: "The Beatles", image: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" },
-    { title: "Thriller", artist: "Michael Jackson", image: "https://imgs.search.brave.com/K3E3Q2pfxZY7tcifUrPowjLSmnydgrcHrIAIhUIIgeU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/cC5zbWVob3N0Lm5l/dC9zaXRlcy8yOGQz/NWQ1NGEzYzY0ZTJi/ODUxNzkwYTE4YTFj/NGMxOC93cC1jb250/ZW50L3VwbG9hZHMv/MjAwOS8wMy90aHJp/bGxlci1hbGJ1bS1t/aWNoYWVsamFja3Nv/bi5qcGc" },
+    { title: "Thriller", artist: "Michael Jackson", image: "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png" },
     { title: "To Pimp a Butterfly", artist: "Kendrick Lamar", image: "https://m.media-amazon.com/images/I/81VcA8-kuZL._UF1000,1000_QL80_.jpg" },
     { title: "Random Access Memories", artist: "Daft Punk", image: "https://upload.wikimedia.org/wikipedia/en/2/26/Daft_Punk_-_Random_Access_Memories.png" },
     { title: "Blue", artist: "Joni Mitchell", image: "https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg" },
