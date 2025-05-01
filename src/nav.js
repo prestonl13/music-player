@@ -11,11 +11,11 @@ function Nav() {
       
       <div className="navbar-center">
         <ul className="nav-links">
-          <li>
-            <Link to="/home" className = "link" >Home</Link>
+          <li className="nav-links">
+            <Link to="/home"  >Home</Link>
           </li>
-          <li>
-            <Link to="/searchpage "  className = "link" >Search</Link>
+          <li className="nav-links">
+            <Link to="/searchpage " >Search</Link>
           </li>
         </ul>
       </div>

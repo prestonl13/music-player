@@ -61,24 +61,32 @@ const SearchBar = () => {
         </div>
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Song</th>
-            <th>Title</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredalbums.map((board, index) => (
-            <tr key={index}>
-              <td>{board.title}</td>
-              <td>
-                <img src={board.image} alt={board.title} width="150" />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+      <div className="flex">
+          <table>
+            <thead>
+              <tr>
+                <th>Song</th>
+                <th>Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredalbums.map((board, index) => (
+                <tr key={index}>
+                  <td>{board.title}</td>
+                  <td>{board.artist}</td>
+                  <td>
+                    <img src={board.image} alt={board.title} width="150" />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+
+    </div>
+
+
     </div>
   );
 };
